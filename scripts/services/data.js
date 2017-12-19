@@ -1,26 +1,16 @@
 'use strict';
 
-angular.module('todoListApp')
+angular.module('squarespaceApp')
 .service('dataService', function($http){
 	
 	this.helloConsole = function(){
 		console.log('this is the hello console service!');
 	};
 	
-	this.getTodos = function(callback){
-		$http.get('mock/todos.json')
+	this.getAssets = function(callback){
+		$http.get('mock/assets.json')
 		.then(callback)
 	};
 	
-	this.deleteTodo = function(todo){
-		console.log("The " + todo.name + " todo has been deleted!"); 
-		
-		//other logic
-		
-	};
-	
-	this.saveTodos = function(todos){
-		console.log(todos.length + " todos have been saved!"); 
-		//other logic
-	};
+
 });
