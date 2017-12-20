@@ -102,7 +102,7 @@ ul {
     display: inline-block;
     text-transform: uppercase;
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px 20px 0 20px;
     font-weight: 900; }
     ul li:hover {
       text-decoration: line-through; }
@@ -118,6 +118,7 @@ ul {
   left: 0;
   margin: 9vw;
   z-index: 1;
+  overflow: hidden;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;

@@ -2,9 +2,6 @@
 
 angular.module('squarespaceApp')
 .controller('mainCtrl', function($scope, dataService){
-
-	
-// 	$scope.helloConsole = dataService.helloConsole;
 	
 	
 	dataService.getAssets(function(response){
