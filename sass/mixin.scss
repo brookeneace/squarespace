@@ -1,0 +1,14 @@
+$mobile-break: "768px"; 
+
+@mixin breakpoint($break) {
+     @media screen and (max-width:$break){
+        @content;
+    }
+}
+
+
+@mixin mobile-break {
+     @include breakpoint($mobile-break){
+        @content;
+    }
+}

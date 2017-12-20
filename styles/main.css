@@ -53,6 +53,9 @@ h1 {
   padding: 30px 0 0 0;
   margin: 0 0 10px 0;
   font-weight: 700; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2em; } }
 
 .wrapper {
   width: 100%;
@@ -83,6 +86,7 @@ a:hover {
   color: #65a1cc; }
 
 ul {
+  z-index: 10;
   position: absolute;
   top: auto;
   left: 50%;
@@ -102,6 +106,9 @@ ul {
     font-weight: 900; }
     ul li:hover {
       text-decoration: line-through; }
+    @media screen and (max-width: 768px) {
+      ul li {
+        padding: 15px 20px; } }
 
 .portfolio {
   position: fixed;
@@ -111,12 +118,30 @@ ul {
   left: 0;
   margin: 9vw;
   z-index: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex; }
-  .portfolio .item {
-    display: none; }
-    .portfolio .item.active {
+  @media screen and (max-width: 768px) {
+    .portfolio {
+      height: 60vh; } }
+  .portfolio .item, .portfolio .default {
+    max-width: 1000px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0); }
+    .portfolio .item.active, .portfolio .default.active {
       display: block;
-      width: 100%;
-      align-self: center; }
+      width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
