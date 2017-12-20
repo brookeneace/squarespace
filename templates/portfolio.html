@@ -1,16 +1,19 @@
 <div class="wrapper">
 	
 	<div class="portfolio">
-	  <div class="item active">
+	 
+	  
+	  <div class="item" ng-repeat="asset in assets" data-id="{{asset.id}}" >
+		   <img src="{{asset.image}}" alt="{{asset.name}}" />
+	  </div>
+	  
+	   <div class="item active" id="hello" data-id="hello-world">
 		  <h1>I'm a UX designer and front-end web developer.</h1>
 	  </div>
 	  
-	  <div class="item" ng-repeat="asset in assets">
-		   <img src="{{asset.image}}" alt="{{asset.name}}" />
-	  </div>
 	</div>  
 	  <ul>
-		  <li ng-repeat="asset in assets">{{asset.name}}</li>
+		  <li ng-repeat="asset in assets" data-id="{{asset.id}}" ng-mouseover='hoverAttr($event)'>{{asset.name}}</li>
 	  </ul>
 
 	   

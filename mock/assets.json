@@ -1,14 +1,20 @@
 [
 		{"name": "Buthertown Grocery", 
-			"image": "http://brookeneace.com/wp-content/themes/brookestheme/images/butchertown-grocery.jpg"},
+			"image": "http://brookeneace.com/wp-content/themes/brookestheme/images/butchertown-grocery.jpg",
+			"id": "butchertown-grocery"},
 		{"name": "Expert Griller",
-			"image": "http://brookeneace.com/wp-content/themes/brookestheme/images/expert-griller2017.png"},
+			"image": "http://brookeneace.com/wp-content/themes/brookestheme/images/expert-griller2017.png",
+			"id": "expert-griller"},
 		{"name": "GE Monogram",
-			"image": "http://brookeneace.com/wp-content/themes/brookestheme/images/ge-monogram.jpg"},
+			"image": "http://brookeneace.com/wp-content/themes/brookestheme/images/ge-monogram.jpg",
+			"id": "ge-monogram"},
 		{"name": "El Jimador",
-			"image": "http://brookeneace.com/wp-content/themes/brookestheme/images/eljim.jpg"},
+			"image": "http://brookeneace.com/wp-content/themes/brookestheme/images/eljim.jpg",
+			"id": "el-jimador"},
 		{"name": "Gold Star Chili",
-			"image": "http://brookeneace.com/wp-content/themes/brookestheme/images/goldstar-3way.jpg"},
+			"image": "http://brookeneace.com/wp-content/themes/brookestheme/images/goldstar-3way.jpg",
+			"id": "gold-star"},
 		{"name": "Bio/Contact",
-			"image": "path goes here 6"}
+			"image": "http://brookeneace.com/wp-content/uploads/2017/12/new-photo.jpg",
+			"id": "bio-contact"}
 ]
